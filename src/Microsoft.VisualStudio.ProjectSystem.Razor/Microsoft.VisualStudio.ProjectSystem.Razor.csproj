@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Razor is a markup syntax for adding server-side logic to web pages. This package contains the Razor parser and code generation infrastructure.</Description>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections.Immutable" Version="$(SystemCollectionsImmutablePackageVersion)" />
+    <PackageReference Include="System.Composition" Version="$(SystemCompositionPackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.OLE.Interop" Version="$(MicrosoftVisualStudioOLEInteropPackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.15.0" Version="$(MicrosoftVisualStudioShell150PackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Interop.10.0" Version="$(MicrosoftVisualStudioShellInterop100PackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Interop.11.0" Version="$(MicrosoftVisualStudioShellInterop110PackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Interop.12.0" Version="$(MicrosoftVisualStudioShellInterop120PackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Interop.8.0" Version="$(MicrosoftVisualStudioShellInterop80PackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Interop.9.0" Version="$(MicrosoftVisualStudioShellInterop90PackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Interop" Version="$(MicrosoftVisualStudioShellInteropPackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading" Version="$(VSThreadingPackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.ProjectSystem.SDK" Version="$(MicrosoftVisualStudioProjectSystemSDKVersion)" />
+
+    <Reference Include="..\..\..\project-system\artifacts\Debug\bin\Dlls\Microsoft.VisualStudio.ProjectSystem.Managed.dll" />
+    <Reference Include="..\..\..\project-system\artifacts\Debug\bin\Dlls\Microsoft.VisualStudio.ProjectSystem.Managed.VS.dll" />
+    <Reference Include="$(RoslynBinary_Microsoft_CodeAnalysis)" />
+    <Reference Include="$(RoslynBinary_Microsoft_CodeAnalysis_CSharp)" />
+    <Reference Include="$(RoslynBinary_Microsoft_CodeAnalysis_CSharp_Features)" />
+    <Reference Include="$(RoslynBinary_Microsoft_CodeAnalysis_Workspaces)" />
+    <Reference Include="$(RoslynBinary_Microsoft_CodeAnalysis_Workspaces_CSharp)" />
+    <Reference Include="$(RoslynBinary_VisualStudio_LanguageServices)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Clone\" />
+  </ItemGroup>
+</Project>
